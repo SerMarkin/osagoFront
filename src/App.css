@@ -1,38 +1,151 @@
 .App {
   text-align: center;
+  background-image: url("./public/transport4.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  text-align: center;
+  padding: 20px 0;
+  max-height: 10vh;
+  font-weight: 700;
+  font-size: 24px;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 0%, rgba(14,107,126,0.5) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  color:aliceblue;
+  font-weight: 500;
+  padding: 5px 20px 5px 15px;
+  border-radius: 30px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: rgb(95, 95, 95);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+  text-align: center;
+  display: block;
+  background-color: aliceblue;
+  position: absolute;
+  width: 100%;
+  top: 40vh;
+  padding: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.main span {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main a{
+  display: inline-block;
+  margin: 10px;
+}
+
+
+.tel-on {
+  height: 2em;
+  font-size: 2em;
+  width: 100%;
+  color: #fff;
+  line-height: 2em;
+  text-align: center;
+  top: 56%;
+  left: 50%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.tel-on-button {
+  height: 100%;
+  display: inline-block;
+  margin: 0px 4px;
+}
+
+.btn-primary, .sppb-btn-primary {
+  border-color: #259d64;
+  background-color: #2bb674;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 1200ms, background-color 1200ms, border-color 1200ms;
+}
+
+.sppb-btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.sppb-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
